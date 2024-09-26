@@ -4,14 +4,73 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 100vh;
-  width: 100%;
-}
-
-.container {
+  width: 50%;
+  position: relative;
   padding: 20px;
+  margin: 40px;
   border-radius: 16px;
   border: 2px solid rgb(238, 217, 217);
-  width: 50%;
   background-color: #fff;
+}
+
+.info-box-container .icon {
+  background: rgb(247, 227, 227);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.info-box-container button {
+  border: none;
+  padding: 5px;
+  background: rgb(241, 233, 233);
+  border-radius: 4px;
+}
+
+/* Preset buttons styling */
+.preset-buttons {
+  margin: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.preset-buttons button {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.preset-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Center direction preset */
+.info-box-container.info-box-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* Right direction preset */
+.info-box-container.info-box-right {
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  flex-direction: column;
+}
+
+/* Left direction preset */
+.info-box-container.info-box-left {
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+  flex-direction: column;
+}
+
+/* Top content icon preset */
+.info-box-container.info-box-top .icon {
+  position: absolute;
+  margin-bottom: 210px;
 }
